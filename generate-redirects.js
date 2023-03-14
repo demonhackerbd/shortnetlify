@@ -1,0 +1,1 @@
+node generate-redirects.js
