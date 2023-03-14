@@ -2,9 +2,21 @@
 <html>
 <head>
 	<title>Redirecting...</title>
-	<meta http-equiv="refresh" content="0;URL='https://www.youtube.com/redirect?event=comments&amp;redir_token=YOUR_REDIRECT_TOKEN&amp;q=https%3A%2F%2Fmeetgirls.netlify.app%2Fnew2&amp;html_redirect=1'" />
+	<script>
+		function redirectToURL() {
+			var redirectToken = 'YOUR_REDIRECT_TOKEN_HERE';
+			var url = 'YOUR_DESTINATION_URL_HERE';
+			var encodedURL = encodeURIComponent(url);
+			var redirectURL = 'https://www.example.com/redirect?redir_token=' + redirectToken + '&q=' + encodedURL + '&html_redirect=1';
+			window.location.href = redirectURL;
+		}
+
+		window.onload = function() {
+			redirectToURL();
+		};
+	</script>
 </head>
 <body>
-	<p>If you are not redirected automatically, follow this <a href="https://www.youtube.com/redirect?event=comments&amp;redir_token=YOUR_REDIRECT_TOKEN&amp;q=https%3A%2F%2Fmeetgirls.netlify.app%2Fnew2&amp;html_redirect=1">link</a>.</p>
+	<p>If you are not redirected automatically, click <a href="YOUR_DESTINATION_URL_HERE">here</a>.</p>
 </body>
 </html>
