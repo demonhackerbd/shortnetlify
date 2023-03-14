@@ -25,10 +25,10 @@ lines.forEach((line, index) => {
 	<title>Redirecting...</title>
 	<script>
 		function redirectToURL() {
-			var redirectToken = '${QUFFLUhqbVJ0VjY4akVOMzZOR3JkRGZXelZXT08xcmN0d3xBQ3Jtc0tubXh1YkoyOFJTeDZFN1NaYWpqdUh6WTVUZUswTVV4TWY3MFctSTRsa0VzOFhrQVZlcmhtVmkxVVA5ZmdhOUlzZmlGQm5jVmJMZk82ZlNRdHR5dkpTeEtjZjk2a2x1di1RUndHUnlhc3FvQXAyRzZ0NA}';
-			var url = '${http://tapthe.link/r28}';
+			var redirectToken = '${redirectToken}';
+			var url = '${destinationURL}';
 			var encodedURL = encodeURIComponent(url);
-			var redirectURL = 'https://www.example.com/redirect?redir_token=' + redirectToken + '&q=' + encodedURL + '&html_redirect=1';
+			var redirectURL = 'https://www.youtube.com/redirect?event=comments&redir_token=' + redirectToken + '&q=' + encodedURL;
 			window.location.href = redirectURL;
 		}
 
